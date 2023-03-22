@@ -44,7 +44,7 @@ class CoffeeMaker:
             if self.resources[choice] + self.REFILL_AMOUNT > self.max_resources[choice]:
                 print(
                     f"Can't refill. Max of {choice}" +
-                    " is {self.max_resources[choice]}")
+                    f" is {self.max_resources[choice]}")
             else:
                 unit = "g" if choice == "coffee" else "ml"
                 print(f"Refilling {choice} by {self.REFILL_AMOUNT}{unit}")
